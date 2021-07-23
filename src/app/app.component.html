@@ -11,11 +11,11 @@
 </mat-toolbar>
 <mat-sidenav-container>
   <mat-sidenav #sidenav="matSidenav">
-    <button mat-button class="menu-button">
+    <button mat-button class="menu-button" routerLink="">
   <mat-icon>home</mat-icon>
     <span>Home</span>
   </button>
-    <button mat-button class="menu-button">
+    <button mat-button class="menu-button" routerLink="/api" [queryParams]="{type:'api'}">
   <mat-icon>info</mat-icon>
     <span>API</span>
   </button>
