@@ -14,10 +14,27 @@ export class ApiComponent implements AfterViewInit, OnInit {
   constructor(private apiService: ApiService, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
-      this.type = params.type;
-      console.log(typeof(this.type));
+    this.route.data.subscribe(data => {
+      switch (data.breadcrumb) {
+        case 'Pet': {
+          this.type = data.breadcrumb;
+          break;
+        }
+        case 'Store': {
+          this.type = data.breadcrumb;
+          break;
+        }
+        case 'User': {
+          this.type = data.breadcrumb;
+          break;
+        }
+      }
     });
+    console.log(this.type);
+    // this.route.queryParams.subscribe(params => {
+    //   this.type = params.type;
+    //   console.log(typeof this.type);
+    // });
     this.spec = this.apiService.getApi(this.type);
   }
   ngAfterViewInit() {

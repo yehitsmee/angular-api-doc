@@ -1,7 +1,13 @@
-<mat-toolbar> 
-<mat-icon>menu</mat-icon>
-<span>PETSTORE API DOC</span>
+<mat-toolbar>
+  <mat-icon>menu</mat-icon>
+  <span>PETSTORE API DOC</span>
 </mat-toolbar>
+<breadcrumb #parent>
+  <span class="breadcrumb" *ngFor="let route of parent.breadcrumbs">
+      <a mat-button *ngIf="!route.terminal" href="" [routerLink]="[route.url]">{{ route.displayName }}</a>
+      <a mat-button *ngIf="route.terminal">{{ route.displayName }}</a>
+  </span>
+</breadcrumb>
 <router-outlet></router-outlet>
 
 
