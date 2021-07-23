@@ -8,6 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { BreadcrumbModule } from 'angular-crumbs';
 
 import { AppComponent } from './app.component';
 import { ApiComponent } from './api/api.component';
@@ -26,7 +27,8 @@ import { ApiService } from './api.service';
     FlexLayoutModule,
     MatToolbarModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    BreadcrumbModule
   ],
   declarations: [AppComponent, ApiComponent, CardComponent],
   providers: [ApiService],
