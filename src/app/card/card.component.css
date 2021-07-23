@@ -1,23 +1,39 @@
+* {
+  box-sizing: border-box;
+}
 .card {
-  margin: 20px;
-  text-align: left;
-  font-size: 20px;
-  border-radius: 10px;
-  padding: 40px 40px;
-  border-style: solid;
-  border-color: white;
-  width: 42%;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px ;
+  background-color: #f1f1f1;
 }
 a {
   text-decoration: none;
 }
 .flex-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  height: calc(95vh);
-  overflow: hidden;
+  float: left;
+  width: 33%;
+  padding: 0 10px;
 }
 body {
   overflow: hidden; /* Hide scrollbars */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .flex-container {
+    width: 33%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
