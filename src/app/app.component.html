@@ -1,0 +1,35 @@
+<mat-toolbar>
+  <button mat-icon-button *ngIf="sidenav.mode ==='over'" (click)="sidenav.toggle()">
+<mat-icon>
+  menu
+</mat-icon>
+
+
+</button>
+  PETSTORE API DOC
+
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav">
+    <button mat-button class="menu-button">
+  <mat-icon>home</mat-icon>
+    <span>Home</span>
+  </button>
+    <button mat-button class="menu-button">
+  <mat-icon>info</mat-icon>
+    <span>API</span>
+  </button>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z4">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<!-- {{spec.paths["/pet"].post.operationId}}
+<app-card *ngFor="let tag of spec.tags" [tag]="tag"></app-card>
+<app-api [spec]="spec"></app-api> -->
