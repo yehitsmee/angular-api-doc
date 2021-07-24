@@ -15,7 +15,6 @@
     "@angular/platform-browser-dynamic": "^12.1.3",
     "@angular/router": "^12.1.3",
     "@babel/runtime": "^7.14.8",
-    "angular-crumbs": "^3.0.1",
     "autolinker": "^3.14.3",
     "btoa": "^1.2.1",
     "cookie": "^0.4.1",
@@ -32,6 +31,7 @@
     "traverse": "^0.6.6",
     "tslib": "^2.3.0",
     "url": "^0.11.0",
+    "xng-breadcrumb": "^6.7.0",
     "zone.js": "^0.11.4"
   },
   "scripts": {

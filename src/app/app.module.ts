@@ -8,7 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { BreadcrumbModule } from 'angular-crumbs';
+import { BreadcrumbModule } from 'xng-breadcrumb';
 
 import { AppComponent } from './app.component';
 import { ApiComponent } from './api/api.component';

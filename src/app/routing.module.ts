@@ -5,7 +5,6 @@ import { CardComponent } from './card/card.component';
 import { ApiComponent } from './api/api.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
   // {
   //   path: 'home',
   //   component: CardComponent,
@@ -29,29 +28,31 @@ const routes: Routes = [
   //   ]
   // }
   {
-    path: 'home',
+    path: '',
     component: CardComponent,
     data: { breadcrumb: 'Home' }
   },
   {
     path: 'api',
-    children: [
-      {
-        path: 'pet',
-        component: ApiComponent,
-        data: { breadcrumb: 'Pet' }
-      },
-      {
-        path: 'store',
-        component: ApiComponent,
-        data: { breadcrumb: 'Store' }
-      },
-      {
-        path: 'user',
-        component: ApiComponent,
-        data: { breadcrumb: 'User' }
-      }
-    ]
+    component: ApiComponent,
+    data: { breadcrumb: 'Api' }
+    // children: [
+    //   {
+    //     path: 'pet',
+    //     component: ApiComponent,
+    //     data: { breadcrumb: 'Pet' }
+    //   },
+    //   {
+    //     path: 'store',
+    //     component: ApiComponent,
+    //     data: { breadcrumb: 'Store' }
+    //   },
+    //   {
+    //     path: 'user',
+    //     component: ApiComponent,
+    //     data: { breadcrumb: 'User' }
+    //   }
+    // ]
   }
 ];
 
