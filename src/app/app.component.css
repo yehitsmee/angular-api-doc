@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 p {
-  font-family: Lato;
+  font-family: 'Roboto', sans-serif;
 }
 .example-spacer {
   width: 10px;
@@ -21,13 +22,14 @@ p {
 mat-toolbar {
   background: #004a9f;
   color: white;
+  font-size: 18px;
 }
 .menu-button {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: flex-start;
-  font-size: 1rem;
+  font-size: 0.5rem;
   mat-icon {
     margin-right: 8px;
   }
