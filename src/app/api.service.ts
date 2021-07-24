@@ -12,14 +12,13 @@ export class ApiService {
     return api;
   }
   getApi(type: string) {
-    if (type === 'pet') {
+    if (type === 'Pet') {
       return pet;
-    } else if (type === 'store') {
+    } else if (type === 'Store') {
       return store;
-    } else if (type === 'user') {
+    } else if (type === 'User') {
       return user;
     } else {
-      console.log('No');
       return api;
     }
   }

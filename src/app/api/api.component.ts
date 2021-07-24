@@ -14,17 +14,14 @@ export class ApiComponent implements AfterViewInit, OnInit {
   constructor(private apiService: ApiService, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
-      this.type = params.type;
-      console.log(typeof(this.type));
-    });
+    this.type = this.route.snapshot.data.breadcrumb;
     this.spec = this.apiService.getApi(this.type);
   }
   ngAfterViewInit() {
     const ui = SwaggerUI({
       domNode: document.getElementById('swagger-ui'),
       spec: this.spec
-      // url: 'https://petstore.swagger.io/v2/swagger.json'
+      //  `    url: 'https://petstore.swagger.io/v2/swagger.json'
     });
   }
 }
