@@ -1,8 +1,7 @@
 <div class="container">
   <div class="flex-container" fxLayout="row">
     <div *ngFor="let tag of spec.tags">
-      <a routerLink="/api">
-        <!-- /{{tag.name}} -->
+      <a routerLink="/api/{{tag.name}}">
         <mat-card class="card" style="text-align:center">{{tag.name | uppercase}}
         </mat-card>
       </a>

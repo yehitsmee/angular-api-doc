@@ -34,25 +34,26 @@ const routes: Routes = [
   },
   {
     path: 'api',
-    component: ApiComponent,
-    data: { breadcrumb: 'Api' }
-    // children: [
-    //   {
-    //     path: 'pet',
-    //     component: ApiComponent,
-    //     data: { breadcrumb: 'Pet' }
-    //   },
-    //   {
-    //     path: 'store',
-    //     component: ApiComponent,
-    //     data: { breadcrumb: 'Store' }
-    //   },
-    //   {
-    //     path: 'user',
-    //     component: ApiComponent,
-    //     data: { breadcrumb: 'User' }
-    //   }
-    // ]
+    data: { breadcrumb: { skip: true}},
+    // component: ApiComponent,
+    // data: { breadcrumb: 'Api' }
+    children: [
+      {
+        path: 'pet',
+        component: ApiComponent,
+        data: { breadcrumb: 'Pet' }
+      },
+      {
+        path: 'store',
+        component: ApiComponent,
+        data: { breadcrumb: 'Store' }
+      },
+      {
+        path: 'user',
+        component: ApiComponent,
+        data: { breadcrumb: 'User' }
+      }
+    ]
   }
 ];
 
