@@ -6,25 +6,50 @@ import { ApiComponent } from './api/api.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  // {
+  //   path: 'home',
+  //   component: CardComponent,
+  //   data: { breadcrumb: 'Home' },
+  //   children: [
+  //     {
+  //       path: 'pet',
+  //       component: ApiComponent,
+  //       data: { breadcrumb: 'Pet', kind: 'Pet' }
+  //     },
+  //     {
+  //       path: 'store',
+  //       component: ApiComponent,
+  //       data: { breadcrumb: 'Store', kind: 'Store' }
+  //     },
+  //     {
+  //       path: 'user',
+  //       component: ApiComponent,
+  //       data: { breadcrumb: 'User', kind: 'User' }
+  //     }
+  //   ]
+  // }
   {
     path: 'home',
     component: CardComponent,
-    data: { breadcrumb: 'Home' },
+    data: { breadcrumb: 'Home' }
+  },
+  {
+    path: 'api',
     children: [
       {
         path: 'pet',
         component: ApiComponent,
-        data: { breadcrumb: 'Pet', kind: 'Pet' }
+        data: { breadcrumb: 'Pet' }
       },
       {
         path: 'store',
         component: ApiComponent,
-        data: { breadcrumb: 'Store', kind: 'Store' }
+        data: { breadcrumb: 'Store' }
       },
       {
         path: 'user',
         component: ApiComponent,
-        data: { breadcrumb: 'User', kind: 'User' }
+        data: { breadcrumb: 'User' }
       }
     ]
   }
