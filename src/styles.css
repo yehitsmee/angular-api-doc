@@ -11,9 +11,8 @@
   display: inline-block;
   border-radius: 4px;
   background-color: #e7f1f1;
-
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 p {
   font-family: 'Roboto', sans-serif;
-
 }
