@@ -1,23 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-p {
-  font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:display=swap');
+* {
+  font-family: 'Roboto Mono', Monospace, sans-serif;
 }
-.example-spacer {
-  width: 10px;
-}
-.sidenav {
-  flex: 1;
-}
-.sidebar {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 16px;
+.span {
+  font-size: 14px;
 }
 mat-toolbar {
   background: #fff;
@@ -25,12 +11,4 @@ mat-toolbar {
   font-size: 14px;
   font-weight: 400;
   padding: 0px 16px;
-}
-.menu-button {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 1rem;
-  margin-right: 8px;
 }

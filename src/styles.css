@@ -1,10 +1,10 @@
 /* Add application styles & imports to this file! */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:display=swap');
 * {
   padding: 0px;
   margin: 0px;
-  font-family: 'Roboto Mono', monospace, sans-serif;
+  font-family: 'Roboto Mono', Monospace, sans-serif;
 }
 
 .brdcmb {
