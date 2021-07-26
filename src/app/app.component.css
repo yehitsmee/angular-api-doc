@@ -20,17 +20,17 @@ p {
   padding-top: 16px;
 }
 mat-toolbar {
-  background: #004a9f;
-  color: white;
-  font-size: 18px;
+  background: #fff;
+  color: #a5ffe3;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 0px 16px;
 }
 .menu-button {
   width: 100%;
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: flex-start;
-  font-size: 0.5rem;
-  mat-icon {
-    margin-right: 8px;
-  }
+  font-size: 1rem;
+  margin-right: 8px;
 }
