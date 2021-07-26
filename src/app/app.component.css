@@ -4,11 +4,10 @@
 }
 .span {
   font-size: 14px;
+  font-weight: 700;
 }
 mat-toolbar {
   background: #fff;
   color: #a5ffe3;
-  font-size: 14px;
-  font-weight: 400;
   padding: 0px 16px;
 }
