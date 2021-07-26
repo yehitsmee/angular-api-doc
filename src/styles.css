@@ -12,6 +12,7 @@
   padding: 5px 10px;
   display: inline-block;
   font-size: 12px;
+  font-weight: 300;
 }
 .xng-breadcrumb-trail {
   color: #005578 !important;
