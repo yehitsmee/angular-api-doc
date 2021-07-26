@@ -6,7 +6,7 @@
   align-content: center;
 }
 .flexbox-item {
-  min-width: 150px;
+  min-width: 120px;
   margin: 10px;
   border-radius: 10px;
   background-color: #dfdfdf;
@@ -17,6 +17,7 @@
 .card {
   background-color: #f1f1f1;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  font-size: 12px;
 }
 a {
   overflow: hidden;

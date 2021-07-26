@@ -1,14 +1,17 @@
 /* Add application styles & imports to this file! */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 * {
   padding: 0px;
   margin: 0px;
+  font-family: 'Roboto Mono', monospace, sans-serif;
 }
 
 .brdcmb {
   margin: 3px;
   padding: 5px 10px;
   display: inline-block;
+  font-size: 12px;
 }
 .xng-breadcrumb-trail {
   color: #005578 !important;
@@ -16,9 +19,4 @@
 
 body {
   background-color: #ebf0f5;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-p {
-  font-family: 'Roboto', sans-serif;
 }
