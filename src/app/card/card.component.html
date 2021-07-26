@@ -1,10 +1,10 @@
-<div class="container">
-  <div class="flex-container" fxLayout="row">
-    <div *ngFor="let tag of spec.tags">
-      <a routerLink="/api/{{tag.name}}">
+<div class="flexbox-container" fxLayout="row">
+  <div *ngFor="let tag of spec.tags">
+    <a routerLink="/api/{{tag.name}}">
+      <div class="flexbox-item">
         <mat-card class="card" style="text-align:center">{{tag.name | uppercase}}
         </mat-card>
-      </a>
-    </div>
+      </div>
+    </a>
   </div>
 </div>
