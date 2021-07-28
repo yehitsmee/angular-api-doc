@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BreadcrumbModule } from 'xng-breadcrumb';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
 import { ApiComponent } from './api/api.component';
@@ -28,7 +29,8 @@ import { ApiService } from './api.service';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    MatDividerModule
   ],
   declarations: [AppComponent, ApiComponent, CardComponent],
   providers: [ApiService],
