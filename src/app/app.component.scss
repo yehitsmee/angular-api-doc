@@ -7,10 +7,17 @@
 }
 mat-toolbar {
   background: #fff;
-  color: #a5ffe3;
   padding: 0px 16px;
+  color: #c7c2c2;
   img {
     height: 32px;
     width: 96px;
+    padding-right: 3px;
+  }
+  mat-divider {
+    height: 20px;
+  }
+  span {
+    padding-left: 3px;
   }
 }
