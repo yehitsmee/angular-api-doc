@@ -2,10 +2,10 @@
   <div *ngFor="let tag of spec.tags">
     <a routerLink="/api/{{tag.name}}">
       <div class="flexbox-item">
-        <mat-card class="card" style="text-align:center">{{tag.name |lowercase}}
+        <mat-card class="card" style="text-align:center"><div class="name">{{tag.name |lowercase}}</div>
         <mat-card-content style="margin-top:10px">{{tag.description}}</mat-card-content>
           <mat-card-footer>Version:{{spec.info.version}}</mat-card-footer>
-        </mat-card>
+          </mat-card>
       </div>
     </a>
   </div>
