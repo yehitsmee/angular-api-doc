@@ -2,7 +2,7 @@
   <div *ngFor="let tag of spec.tags">
     <a routerLink="/api/{{tag.name}}">
       <div class="flexbox-item">
-        <mat-card class="card" style="text-align:center">{{tag.name | uppercase}}
+        <mat-card class="card" style="text-align:center">{{tag.name |lowercase}}
         </mat-card>
       </div>
     </a>
