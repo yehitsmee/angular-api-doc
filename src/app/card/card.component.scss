@@ -11,7 +11,7 @@ a {
   .flexbox-item {
     min-width: 120px;
     margin: 10px;
-    border-radius: 4px;
+    border-radius: 25px;
     background-color: #dfdfdf;
     flex-shrink: 0;
     flex-grow: 1;
@@ -28,6 +28,7 @@ a {
       font-size: 24px;
       font-family: "Roboto Mono",Monospace,sans-serif;
       min-height: 120px;
+      text-align:left;
     }
     .name{
       font-weight:bold;
